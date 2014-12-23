@@ -80,7 +80,7 @@ a2enmod {{mod}}:
 # Creates user-config for apache
 /etc/apache2/conf.d/z99-user:
   file.managed:
-    - source: salt://apache/z99-user
+    - source: salt://apache/files/z99-user
     - user: root
     - group: root
     - mode: 0644
